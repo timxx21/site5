@@ -28,9 +28,7 @@ footer {
     background-color: #45a1ff;
     color: #fff;
 }
-.cold-md-2{
-    text-left;
-}
+
 .div1 {
     width: 100%;
     background-color: #ccc;
@@ -54,7 +52,6 @@ footer {
 table {
 font-size: 14px;
 border-style: solid;
-border-width: 0 1px 1 px 0;
 border-collapse: collapse;
 text-align: center;
 }
