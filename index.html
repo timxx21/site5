@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+	<title>Дьяченко Андрей</title>
+	<script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale =1">
+	<link rel="stylesheet" href="style.css"> </head>
+
+<body>
+	<div class="div1"><img style="float:left; margin:10px; width:85px; height:85px;" src="https://c.tenor.com/CTpG8Qr1A_AAAAAd/rick-roll-rick-astley.gif" alt="Тут должен быть рикролл">
+			<div class="div2">Супер классный сайт</div>
+
+	</div>
+	<div class="container-fluid mt-20 mb-20 p-10">
+    <div class="col-sm">
+      <a href="#list">Cписок ссылок</a>
+    </div>
+    <div class="col-sm">
+      <a href="#tab">Таблица</a>
+    </div>
+    <div class="col-sm">
+      <a href="#forma">Форма</a>
+    </div>
+	</div>
+	<div class="container mt-20 mb-20 p-10">
+		<a id="list"></a>
+		<h1>Список гиперссылок</h1>
+		<ol>
+			<li> <a href="http://example.com/" title="Сайт по http">Cайт по http</a> </li>
+			<li> <a href="https://example.com/" title="Сайт по https">Cайт по https</a> </li>
+			<li> <a href="https://moodle.kubsu.ru/course/view.php?id=780#maincontent">Cсылка на фрагмент другого сайта</a> </li>
+			<li> <a href="#" title="Вернуться к началу" class="topbutton">Ссылка на фрагмент этого сайта</a> </li>
+			<li><a href="https://http://example.com/about?page=1&amp;perpage=2">сылка с двум параметрами URL</a></li>
+			<li> <a href="" title="">Ссылка с пустым href</a> </li>
+			<li> <a onclick="window.location = 'https://www.google.ru/'">Cсылка без href</a> </li>
+			<li> <a href="https://www.google.ru/" rel="nofollow" title="">Непереходимая ссылка</a> </li>
+			<li> <a href="”about”">Относительная ссылка на страницу в текущем каталоге</a> </li>
+			<li> <a href="”about/example.html”">Oтносительная ссылка на страницу в каталоге about</a> </li>
+			<li> <a href="”../higher.html”">Oтносительная ссылка на страницу в каталоге уровнем выше текущего</a> </li>
+			<li> <a href="”../../double_higher.html”">относительная на страницу в каталоге двумя уровнями выше</a> </li>
+			<li> <a href="”/”">Coкращенная ссылка на главную</a> </li>
+			<li> <a href="”/file/12345”">сокращенная ссылку на внутреннюю</a> </li>
+			<li> <a href="ftp://example.com/Temp/file.txt" title="">Ссылка черз ftp</a> </li>
+			<li> <a href="ftp://admin:12345@example.com/Temp/file.txt">Ссылка через ftp c авторизацией</a></li>
+			<li> <a href="https://www.google.ru/" rel="noindex" title="">Неиндексируемая ссылка</a> </li>
+			<li>Какой-то текст <a class="article-link" target="_blank" href="https://www.google.ru/">контекстная ссылка</a> тут тоже текст </li>
+		</ol>
+	</div>
+
+	<div class="container mt-20 mb-20 p-10">
+		<div class="col-md-6  order-lg-2">
+		<a id="forma"></a>
+				<form action="/" method="POST">
+			<br>
+			<label>
+				<input name="field-name-1" placeholder="Введите ваше имя" > </label>
+			<br >
+			<br>
+			<label>
+				<input name="field-email" type="email" placeholder="Введите вашу почту" > </label>
+			<br >
+			<br>
+			<label> Введите ваш день рождения:
+				<br >
+				<input name="field-date" value="2000-01-01" type="date" > </label>
+			<br >
+			<br> Ваш пол:
+			<br >
+			<label>
+				<input type="radio" checked="checked" name="radio-group-1" value="" > Мужской</label>
+			<label>
+				<input type="radio" name="radio-group-1" value="" > Женский</label>
+			<br >
+			<br> Количество конечностей:
+			<br >
+			<label>
+				<input type="radio" checked="checked" name="radio-group-1" value="" > 4</label>
+			<label>
+				<input type="radio" name="radio-group-1" value="" > 3</label>
+			<label>
+				<input type="radio" name="radio-group-1" value="" > 2</label>
+			<label>
+				<input type="radio" name="radio-group-1" value="" > 1</label>
+			<label>
+				<input type="radio" name="radio-group-1" value="" > Ник Вуйчич</label>
+			<br >
+			<br>
+			<label> Ваши сверхспособности:
+				<br >
+				<select name="field-name-4[]" multiple="multiple">
+					<option value="Значение1">Бессмертие</option>
+					<option value="Значение2">Левитация</option>
+					<option value="Значение3">Умение достать кончиком языка до носа</option>
+				</select>
+			</label>
+			<br >
+			<br>
+			<label> Биография:
+				<br >
+				<textarea name="field-name-2" placeholder="Расскажите о себе"></textarea>
+			</label>
+			<br >
+			<br>
+			<label>
+				<input type="checkbox" name="check-1" >C контрактом ознакомлен(а)</label>
+			<br>
+			<br>
+			<input type="submit" value="Отправить" > 
+		</form>
+		
+		</div>
+		<a id="tab"></a>
+		<div class="col-md-6 order-lg-1">
+			<table>
+			<tbody>
+				<tr>
+					<th>Предмет</th>
+					<th>Аудитория</th>
+				</tr>
+				<tr>
+					<td colspan="2"> Физкультура на стадионе </td>
+					</tr>
+						<tr>
+							<td> Web программирование </td>
+							<td> А305 </td>
+						</tr>
+			</tbody>
+		</table>
+	</div>
+	<div id="basket" class="col-sm-12 text-center  col-md-7 p-1 mx-auto">
+        <h5>Супер классный калькулятор потребительских товаров</h5>
+        <form name="calculator" onsubmit="return false;">
+        	<div class="row">
+                <div class="col-md-3">
+                  <u>Помидоры красные</u>
+                </div>
+                <div class="col-md-2 text-left">
+                    <input name="price1" type="text" value="10"> Цена
+                </div>
+                <div class="col-md-2 text-left">
+                    <input name="quantity1" type="text" value="0"> Количество
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3" >
+                    <u>Помидоры немного не красные</u>
+                </div>
+             <div class="col-md-2 text-left">
+                    <input name="price2" type="text" value="6"> Цена
+                </div>
+                <div class="col-md-2 text-left">
+                    <input name="quantity2" type="text" value="0"> Количество
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                   <u>Помидоры совсем-совсем красные</u>
+                </div>
+                <div class="col-md-2 text-left">
+                    <input name="price3" type="text" value="15"> Цена
+                </div>
+               <div class="col-md-2 text-left">
+                    <input name="quantity3" type="text" value="0"> Количество
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                   <u>Огурцы</u>
+                </div>
+                <div class="col-md-2 text-left">
+                    <input name="price4" type="text" value="10"> Цена 
+                </div>
+                <div class="col-md-2 text-left">
+                    <input name="quantity4" type="text" value="0"> Количество
+                </div>
+            </div>
+            <button id = "my-button">Посчитать стоимость</button>
+          </form>
+          <div class="pt_2" id="result"></div>
+        </div>
+    </div>
+	<footer>
+		<p>© 2022 Андрей Дьяченко</p>
+	</footer>
+</body>
+
+</html>
