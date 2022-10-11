@@ -10,16 +10,15 @@ function calculation() {
     let price4 = form.elements.price4;
     let quantity4 = form.elements.quantity4;
     let result = document.getElementById("result");
-    let res = price1.value*quantity1.value + price2.value*quantity2.value + price3.value*quantity3.value + price4.value*quantity4.value 
-    if(isNaN(res)) {
-        result.innerHTML = "Что-то не так";  e.preventDefault()
-    }
-    else {
-        result.innerHTML = "Всего товаров на сумму: " + res;  e.preventDefault()
+    let res = price1.value * quantity1.value + price2.value * quantity2.value;
+    res += price3.value * quantity3.value + price4.value * quantity4.value;
+    if (res.isNaN) {
+        result.innerHTML = "Что-то не так";
+    } else {
+        result.innerHTML = "Всего товаров на сумму: " + res;
     }
 }
-window.addEventListener("DOMContentLoaded", function (event) {
-  console.log("DOM fully loaded and parsed");
-  let button = document.getElementById("my-button");
-  button.addEventListener("click", calculation);
+window.addEventListener("DOMContentLoaded", function () {
+    let button = document.getElementById("my-button");
+    button.addEventListener("click", calculation);
 });
